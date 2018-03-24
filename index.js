@@ -6,7 +6,7 @@ import {
   ActivityIndicator
 } from 'react-native';
 
-export const Loader = ({ loading }) => {
+export const Loader = ({ loading, color }) => {
   return (
     <Modal
       transparent
@@ -15,7 +15,7 @@ export const Loader = ({ loading }) => {
     >
       <View style={styles.modalBackground}>
         <View style={styles.activityIndicatorWrapper}>
-          <ActivityIndicator animating={loading} />
+          <ActivityIndicator animating={loading} color={color} />
         </View>
       </View>
     </Modal>
