@@ -12,6 +12,7 @@ export const Loader = ({ loading, color, size }) => {
       transparent
       animationType={'none'}
       visible={loading}
+      onRequestClose={() => null}
     >
       <View style={styles.modalBackground}>
         <View style={styles.activityIndicatorWrapper}>
