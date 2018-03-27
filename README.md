@@ -1,17 +1,72 @@
 # react-native-modal-loader
+A progress hud for react apps
 
 ## Installation
 
-### Install via npm
+Install the module from npm with `npm install react-native-modal-loader --save`.
 
-`npm i react-native-modal-loader`
+## Demo
+
+<img src="https://github.com/kdastan/react-native-modal-loader/blob/master/demo/demo.gif" width="30%" />
 
 ## Usage
 
-`import { Loader } from 'react-native-modal-loader';`
+Import module using `import { Loader } from 'react-native-modal-loader';`, then place component at the top of your view container.
 
-`<Loader loading={true || false} />`
+```
+import React, { Component } from 'react';
+import {
+  StyleSheet,
+  TouchableOpacity,
+  Text,
+  View
+} from 'react-native';
+import { Loader } from 'react-native-modal-loader';
+
+export default class App extends Component {
+  state = {
+    isLoading: false
+  }
+
+  showLoader = () => {
+    this.setState({ isLoading: true });
+  }
+
+  render() {
+    return (
+      <View style={styles.container}>
+        <Loader loading={this.state.isLoading} />
+        <TouchableOpacity onPress={() => this.showLoader()}>
+          <View style={styles.buttonContainer}>
+            <Text style={{ color: 'white', fontSize: 18 }}>
+              {'Show Loader'}
+            </Text>
+          </View>
+        </TouchableOpacity>
+      </View>
+    );
+  }
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#F5FCFF',
+  },
+  buttonContainer: {
+    height: 40,
+    width: 160,
+    backgroundColor: 'aqua',
+    justifyContent: 'center',
+    alignItems: 'center'
+  }
+});
+```
 
 ## Future purposes
 
 - Update Readme
+- Add Prop.Types
+- Make customizable
