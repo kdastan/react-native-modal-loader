@@ -13,7 +13,7 @@ Install the module from npm with `npm install react-native-modal-loader --save`.
 
 Import module using `import { Loader } from 'react-native-modal-loader';`, then place component at the top of your view container.
 
-```
+```js
 import React, { Component } from 'react';
 import {
   StyleSheet,
