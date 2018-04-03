@@ -1,4 +1,7 @@
 # react-native-modal-loader
+[![npm version](https://badge.fury.io/js/react-native-modal-loader.svg?update=7)](http://badge.fury.io/js/react-native-modal-loader)
+[![npm downloads](https://img.shields.io/npm/dm/react-native-modal-loader.svg?update=7)](http://badge.fury.io/js/react-native-modal-loader)
+
 A progress hud for react apps
 
 ## Installation
@@ -70,3 +73,7 @@ const styles = StyleSheet.create({
 - Update Readme
 - Add Prop.Types
 - Make customizable
+
+## License
+
+[MIT License](http://opensource.org/licenses/mit-license.html). © Kumar Dastan
