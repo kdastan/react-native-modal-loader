@@ -1,25 +1,21 @@
 {
-  "name": "react-native-modal-loader",
-  "version": "1.1.1",
-  "description": "Modal loader hud for react-native",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kdastan/react-native-modal-loader.git"
-  },
-  "keywords": [
-    "loder",
-    "modal",
-    "hud",
-    "progress"
-  ],
-  "author": "Kumar Dastan",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/kdastan/react-native-modal-loader/issues"
-  },
-  "homepage": "https://github.com/kdastan/react-native-modal-loader#readme"
+	"name": "react-native-modal-loader",
+	"version": "1.2.0",
+	"description": "Modal loader hud for react-native",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kdastan/react-native-modal-loader.git"
+	},
+	"keywords": ["loder", "modal", "hud", "progress"],
+	"readme": "README.md",
+	"author": "Kumar Dastan",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/kdastan/react-native-modal-loader/issues"
+	},
+	"homepage": "https://github.com/kdastan/react-native-modal-loader#readme"
 }
