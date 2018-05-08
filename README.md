@@ -21,11 +21,12 @@ Import module using `import Loader from 'react-native-modal-loader';`, then plac
 
 ### Properties
 
-| Prop    | Default | isRequired |        Type        | Description                           |
-| :------ | :-----: | :--------: | :----------------: | :------------------------------------ |
-| loading |  false  |    true    |        bool        | Whether to show the loader or hide it |
-| color   |  grey   |   false    |       color        | Color of the spinner                  |
-| size    |  small  |   false    | 'small' or 'large' | Size of the spinner                   |
+| Prop    | Default | isRequired |        Type        | Description                              |
+| :------ | :-----: | :--------: | :----------------: | :--------------------------------------- |
+| loading |  false  |    true    |        bool        | Whether to show the loader or hide it    |
+| color   |  grey   |   false    |       color        | Color of the spinner                     |
+| size    |  small  |   false    | 'small' or 'large' | Size of the spinner                      |
+| opacity |   0.4   |   false    |       number       | Background opacity value between 0 and 1 |
 
 ## Example
 
@@ -35,31 +36,31 @@ import { StyleSheet, Button, Text, View } from 'react-native';
 import Loader from 'react-native-modal-loader';
 
 export default class App extends Component {
-	state = {
-		isLoading: false
-	};
+  state = {
+    isLoading: false
+  };
 
-	showLoader = () => {
-		this.setState({ isLoading: true });
-	};
+  showLoader = () => {
+    this.setState({ isLoading: true });
+  };
 
-	render() {
-		return (
-			<View style={styles.container}>
-				<Loader loading={this.state.isLoading} color="#ff66be" />
-				<Button title="Press me!" onPress={this.showLoader} />
-			</View>
-		);
-	}
+  render() {
+    return (
+      <View style={styles.container}>
+        <Loader loading={this.state.isLoading} color="#ff66be" />
+        <Button title="Press me!" onPress={this.showLoader} />
+      </View>
+    );
+  }
 }
 
 const styles = StyleSheet.create({
-	container: {
-		flex: 1,
-		justifyContent: 'center',
-		alignItems: 'center',
-		backgroundColor: '#F5FCFF'
-	}
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#F5FCFF'
+  }
 });
 ```
 
