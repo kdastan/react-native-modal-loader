@@ -31,9 +31,9 @@ Import module using `import Loader from 'react-native-modal-loader';`, then plac
 ## Example
 
 ```js
-import React, { Component } from 'react';
-import { StyleSheet, Button, Text, View } from 'react-native';
-import Loader from 'react-native-modal-loader';
+import React, { Component } from "react";
+import { StyleSheet, Button, Text, View } from "react-native";
+import Loader from "react-native-modal-loader";
 
 export default class App extends Component {
   state = {
@@ -57,17 +57,17 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF'
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#F5FCFF"
   }
 });
 ```
 
-## Future purposes
+## Future goals
 
-* New animation style
-* Add prop to write title
+- [ ] New animation style
+- [x] Add prop to write title
 
 ## License
 
