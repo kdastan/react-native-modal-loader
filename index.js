@@ -1,12 +1,18 @@
-import React from 'react';
-import { StyleSheet, View, Modal, ActivityIndicator } from 'react-native';
-import PropTypes from 'prop-types';
+import React from "react";
+import { StyleSheet, View, Modal, ActivityIndicator } from "react-native";
+import PropTypes from "prop-types";
 
-const Loader = ({ loading = false, color, size, opacity = 0.4 }) => {
+const Loader = ({
+  loading = false,
+  color,
+  size,
+  opacity = 0.4,
+  title = ""
+}) => {
   return (
     <Modal
       transparent
-      animationType={'none'}
+      animationType={"none"}
       visible={loading}
       onRequestClose={() => null}
     >
@@ -18,6 +24,9 @@ const Loader = ({ loading = false, color, size, opacity = 0.4 }) => {
       >
         <View style={styles.activityIndicatorWrapper}>
           <ActivityIndicator animating={loading} color={color} size={size} />
+          <Text style={styles.title} numberOfLines={1}>
+            {title}
+          </Text>
         </View>
       </View>
     </Modal>
@@ -30,24 +39,29 @@ Loader.propTypes = {
   size: PropTypes.string,
   opacity: (props, propName, componentName) => {
     if (props[propName] < 0 || props[propName] > 1) {
-      return new Error('Opacity prop value out of range');
+      return new Error("Opacity prop value out of range");
     }
-  }
+  },
+  title: PropTypes.string
 };
 
 const styles = StyleSheet.create({
   modalBackground: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center'
+    alignItems: "center",
+    justifyContent: "center"
   },
   activityIndicatorWrapper: {
-    backgroundColor: 'white',
+    backgroundColor: "white",
     height: 100,
     width: 100,
     borderRadius: 10,
-    alignItems: 'center',
-    justifyContent: 'center'
+    alignItems: "center",
+    justifyContent: "center"
+  },
+  title: {
+    position: "absolute",
+    paddingTop: 50
   }
 });
 
