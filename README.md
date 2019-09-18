@@ -67,7 +67,6 @@ const styles = StyleSheet.create({
 ## Future goals
 
 - [ ] New animation style
-- [x] Add prop to write title
 
 ## License
 
