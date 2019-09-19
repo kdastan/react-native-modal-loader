@@ -27,6 +27,7 @@ Import module using `import Loader from 'react-native-modal-loader';`, then plac
 | color   |  grey   |   false    |       color        | Color of the spinner                     |
 | size    |  small  |   false    | 'small' or 'large' | Size of the spinner                      |
 | opacity |   0.4   |   false    |       number       | Background opacity value between 0 and 1 |
+| title   |   ""    |   false    |       string       | Description for loader                   |
 
 ## Example
 
@@ -67,7 +68,6 @@ const styles = StyleSheet.create({
 ## Future goals
 
 - [ ] New animation style
-- [x] Add prop to write title
 
 ## License
 
