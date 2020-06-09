@@ -3,6 +3,7 @@
 	"version": "1.3.0",
 	"description": "Modal loader hud for react-native",
 	"main": "index.js",
+	"types": "types.d.ts",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
@@ -10,12 +11,20 @@
 		"type": "git",
 		"url": "git+https://github.com/kdastan/react-native-modal-loader.git"
 	},
-	"keywords": ["loder", "modal", "hud", "progress"],
+	"keywords": [
+		"loder",
+		"modal",
+		"hud",
+		"progress"
+	],
 	"readme": "README.md",
 	"author": "Kumar Dastan",
 	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/kdastan/react-native-modal-loader/issues"
 	},
-	"homepage": "https://github.com/kdastan/react-native-modal-loader#readme"
+	"homepage": "https://github.com/kdastan/react-native-modal-loader#readme",
+	"devDependencies": {
+		"typescript": "^3.9.5"
+	}
 }
